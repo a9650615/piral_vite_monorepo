@@ -8,6 +8,30 @@ importers:
 
   .: {}
 
+  packages/app-profile:
+    devDependencies:
+      '@package/app-shell':
+        specifier: workspace:*
+        version: link:../app-shell
+      '@types/node':
+        specifier: latest
+        version: 20.7.1
+      '@types/react':
+        specifier: '*'
+        version: 18.2.23
+      '@types/react-dom':
+        specifier: '*'
+        version: 18.2.8
+      piral-cli:
+        specifier: 1.2.0
+        version: 1.2.0
+      piral-cli-vite:
+        specifier: ^1
+        version: 1.0.0(@types/node@20.7.1)
+      typescript:
+        specifier: ^3.1.3
+        version: 3.9.10
+
   packages/app-shell:
     dependencies:
       piral:
@@ -1061,6 +1085,12 @@ packages:
   /tslib@2.6.2:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
     dev: false
+
+  /typescript@3.9.10:
+    resolution: {integrity: sha512-w6fIxVE/H1PkLKcCPsFqKE7Kv7QUwhU8qQY2MueZXWx5cPZdwFupLgKK3vntcK98BtNHZtAF4LA/yl2a7k8R6Q==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: true
 
   /typescript@5.2.2:
     resolution: {integrity: sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==}

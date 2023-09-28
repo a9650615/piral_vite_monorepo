@@ -1,0 +1,33 @@
+{
+  "name": "@package/app-profile",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "pilet"
+  ],
+  "devDependencies": {
+    "@package/app-shell": "workspace:*",
+    "@types/node": "latest",
+    "@types/react": "*",
+    "@types/react-dom": "*",
+    "piral-cli": "1.2.0",
+    "piral-cli-vite": "^1",
+    "typescript": "^3.1.3"
+  },
+  "scripts": {
+    "start": "pilet debug",
+    "build": "pilet build",
+    "upgrade": "pilet upgrade"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "importmap": {
+    "imports": {},
+    "inherit": [
+      "@package/app-shell"
+    ]
+  },
+  "source": "src/index.tsx"
+}
