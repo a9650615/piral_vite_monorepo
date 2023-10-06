@@ -32,6 +32,7 @@
   },
   "source": "src/index.tsx",
   "dependencies": {
+    "feature-user": "workspace:^",
     "react-router-dom": "^5"
   }
 }
